@@ -247,6 +247,7 @@ USE_SENSOR_MULTI_HAL := true
 
 # Treble flag
 BOARD_VNDK_VERSION := current
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # Sepolicy
 include device/xiaomi/spes/sepolicy/vndr/SEPolicy.mk
