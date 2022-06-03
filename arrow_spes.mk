@@ -35,9 +35,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
