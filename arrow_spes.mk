@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Additions
 $(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
@@ -21,7 +21,7 @@ $(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 # Product Specifics
-PRODUCT_NAME := lineage_spes
+PRODUCT_NAME := arrow_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -29,8 +29,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+DEVICE_MAINTAINER := Ridwan Adi Cahyono
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
