@@ -17,9 +17,6 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Additions
 $(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
 
-# Camera
-$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
-
 # Product Specifics
 PRODUCT_NAME := arrow_spes
 PRODUCT_DEVICE := spes
