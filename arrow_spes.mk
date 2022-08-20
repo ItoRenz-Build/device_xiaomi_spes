@@ -32,10 +32,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="spes-user 11 RKQ1.211001.001 V13.0.9.0.RGCMIXM release-keys"
 
